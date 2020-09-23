@@ -9,11 +9,11 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class GithubTests extends TestBase {
+public class openGooglePage extends TestBase {
 
     @Test
     @DisplayName("Navigate to main page")
-    void loginWithUnverifiedEmailTest() {
+    void openGooglePage() {
         step("Go to login page", () -> {
             open("https://google.com");
             $(By.name("q")).shouldBe(visible);
